@@ -5,9 +5,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+// ignore: must_be_immutable
 class ReadandAudi extends StatefulWidget {
   final Book book;
-  ReadandAudi(this.book, {super.key});
+  int n;
+  // ignore: use_key_in_widget_constructors
+  ReadandAudi(this.book, [this.n = 0]);
 
   @override
   State<ReadandAudi> createState() => _ReadandAudiState();
@@ -15,18 +18,18 @@ class ReadandAudi extends StatefulWidget {
 
 class _ReadandAudiState extends State<ReadandAudi> {
   late List<Widget> screens;
-  int curentindex = 0;
-
+  late int curentindex;
   @override
   void initState() {
     super.initState();
     screens = [Read(widget.book), Audio(widget.book)];
+    curentindex = widget.n;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    body: screens[curentindex],
+      body: screens[curentindex],
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

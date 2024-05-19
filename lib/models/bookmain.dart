@@ -127,7 +127,10 @@ summary_detail(BuildContext context, Book book) {
                   children: <Widget>[
                     Expanded(
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (ctx) => ReadandAudi(book,1)));
+                          
+                        },
                         child: Container(
                           alignment: Alignment.center,
                           height: 56,

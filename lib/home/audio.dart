@@ -64,11 +64,11 @@ class _AudioState extends State<Audio> {
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xff75869C)),
               ),
               SizedBox(
-                width: double.infinity,
+                width: 200,
                 height: 10,
                 child: Image.asset(
                   "assets/images/home/audio.png",
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                 ),
               ),
               Text(
