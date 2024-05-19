@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+// ignore: must_be_immutable
 class Read extends StatelessWidget {
   Book book;
   Read(this.book, {super.key});

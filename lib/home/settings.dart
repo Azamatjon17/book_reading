@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+// ignore: must_be_immutable
 class Settings extends StatelessWidget {
   Function() changefalse;
   Settings(this.changefalse, {super.key});
