@@ -101,7 +101,23 @@ summary_detail(BuildContext context, Book book) {
                             child: Text("Ut sint eiusmod ipsum dolore excepteur laboris dolore aliqua excepteur et do ea.Sunt quis voluptate id fugiat tempor dolor deserunt."),
                           ),
                         ],
-                      )
+                      ),
+                    const Gap(25),
+                    const Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        "Description",
+                        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    const Gap(10),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Text(
+                        book.description,
+                        style: const TextStyle(fontSize: 18),
+                      ),
+                    )
                   ],
                 ),
               ),
