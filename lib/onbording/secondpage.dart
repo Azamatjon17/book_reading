@@ -100,9 +100,12 @@ class OnBordingWidget extends StatelessWidget {
                             color: selecticon == i ? const Color(0xff1872F6) : const Color(0xffE3E5ED),
                             shape: BoxShape.circle,
                           ),
-                          child: Text(
-                            "$i",
-                            style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500, color: selecticon == i ? Colors.white : Colors.black),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Text(
+                              "$i",
+                              style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500, color: selecticon == i ? Colors.white : Colors.black),
+                            ),
                           ),
                         ),
                         const Gap(8),
